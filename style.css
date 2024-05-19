@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/bg.jpg);
+    background-position: -154px -183px;
+    background-size: max(1200px, 125vw);
+    background-repeat: no-repeat;
+    height: 680px;
+    position: relative;
+}
+
+.main .box {
+    height: 680px;
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(180deg, rgb(0 0 0 / 90%) -1%, rgb(0 0 0 / 34%), rgb(0 0 0 / 89%));
+}
+nav{
+    max-width: 75vw;
+    justify-content: space-between;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+nav img{
+    color:rgba(242, 34, 34, 0.808);
+    width: 146px;
+    opacity: 0.85;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:12px 20px 0 15px;
+    position: relative;
+}
+.hero2 {
+    display: flex;
+    font-family: 'Martel Sans', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    gap: 15px;
+    height: 174px;
+    width: 92vw;
+    margin: 9px 8px;
+}
+.hero2> :nth-child(1){
+    font-weight: 900;
+    font-size: 45px;
+    text-align: center;
+}
+.hero2> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero2> :nth-child(3){
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+}
+.btn{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    align-items: center;
+    padding: 4px 16px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.656);
+    cursor: pointer;
+    /* text-align: center; */
+}
+.btn-red1{
+    background-color: rgba(255, 0, 0, 0.844);
+    /* color: white; */
+    padding: 9px 25px;
+    font-size: 24px;
+    border: none;
+    font-weight: 500;
+}
+.main .navb{
+    display: flex;
+    gap: 22px;
+}
+.btn-red{
+    background-color: rgba(255, 0, 0, 0.826);
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.hero-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px 5px 0 8px;
+    gap:8px;
+}
+.main input{
+    padding: 15px 150px 15px 18px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color:  rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.309);
+}
+.separation{
+    height: 7px;
+    background-color: rgba(93, 90, 90, 0.468);
+    position: relative;
+    z-index: 20;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    max-width:75vw;
+    margin: auto;
+    height: 90vh;
+    color: white;
+    align-items: center;
+}
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 480px;
+    position: relative;
+    z-index: 10;
+}
+.secImg video {
+    width: 400px;
+    position: absolute;
+    top: 87px;
+    right: 22px;
+}
+section.first>div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+section.first div :nth-child(1){
+    font-size: 46px;
+    font-weight: bolder;
+}
+section.first div :nth-child(2){
+    font-size: 24px;
+}
+.second .cont{
+    display: flex;
+    gap: 15px;
+    background-color: black;
+    border: 2px solid rgb(128 128 128 / 70%);
+    border-radius: 12px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    z-index: 12;
+    top: 300px;
+    left:104px;
+}
+.second .secImg .cont .st{
+    font-size: 13px;
+}
+.second .secImg .cont .stdown{
+    margin: 0 20px 0 0px;
+    padding-top: 24px;
+}
+.second .secImg .cont .downl{
+    font-size: 14px;
+    color: #0071eb;
+}
+.second .secImg .cont .boxim>img{
+    width: 48px; 
+    /* height:63px;  */
+    position: relative;
+    top: 8px;
+    left: 4px;
+}
+.second .secImg .cont .boxim{
+    width: 110px;
+    /* margin: auto; */
+    padding: 2px 2px;
+}
+.second .secImg .cont .download{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+.faq h2{
+    font-size: 46px;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 1000px){
+    nav{
+        max-width: 90vw;
+    }
+    .first{
+        flex-wrap: wrap;
+        color: red;
+    }
+    section.first div :nth-child(1){
+        font-size: 36px;
+        font-weight: bolder;
+    }
+    section.first div :nth-child(2){
+        font-size: 20px;
+    }
+    section.first>div{
+        padding: 20px 8px;
+    }
+    section.second>:nth-last-child(2){
+        padding: 10px 8px;
+        /* margin: px 6px; */
+    }
+    .first{
+        max-width:70vw;
+        margin: 20px auto;
+        height: 110vh;
+    }
+    .hero2> :nth-child(1){
+        font-size: 40px;
+    }
+    .hero2> :nth-child(2){
+        font-size: 20px;
+    }
+    .hero2> :nth-child(3){
+        font-size: 16px;
+    }
+    .btn-red1{
+        padding: 6px 16px;
+        font-size: 16px;
+        border: none;
+    }
+    .hero-buttons{
+        padding:0px 3px 0 6px;
+        gap:4px;
+    }
+    .main input{
+        /* margin-top:80px; */
+        padding: 6px 100px 10px 8px;
+        color: white;
+        font-size: 14px;
+    }
+    .hero-buttons{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
