@@ -154,6 +154,17 @@ nav button{
     position: relative;
     z-index: 10;
 }
+.third .secImg img{
+    width: 468px;
+    position: relative;
+    z-index: 10;
+}
+.third .secImg video {
+    width: 307px;
+    position: absolute;
+    top: 64px;
+    right: 84px;
+}
 .secImg video {
     width: 400px;
     position: absolute;
@@ -220,13 +231,100 @@ section.first div :nth-child(2){
     color: white;
     text-align: center;
 }
+.faq{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 34px;
+}
+.faqbox:hover{
+    background-color: #414141;
+    color: white;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+.faqbox{
+    transition: all 0.6s ease-out;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 20px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+.hero8> :nth-child(1){
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.hero8 .footer_email> :nth-child(1){
+    padding: 15px 150px 15px 18px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color:  rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.309);
+}
+.hero8 .footer_email> :nth-child(2){
+    background-color: rgba(255, 0, 0, 0.844);
+    padding: 9px 25px;
+    font-size: 24px;
+    border: none;
+    font-weight: 500;
+}
+.hero8 .footer_email{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:4px 5px 4 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap:8px;
+}
+footer{
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    padding: 50px;
+}
+footer .questions{
+    padding: 34px 0;
+}
+
+.footer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-bottom: 40px;
+}
+a{
+    text-decoration:underline; 
+    color: rgba(244, 240, 240, 0.558);
+}
+.footer .footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer span{
+    display: block;
+    padding: 18px 0;
+    font-size: 16px;
+    color: rgba(246, 242, 242, 0.641);
+}
 @media screen and (max-width: 1000px){
+    body{
+        /* background-color: blue; */
+    }
     nav{
         max-width: 90vw;
     }
     .first{
         flex-wrap: wrap;
-        color: red;
+        color: white;
     }
     section.first div :nth-child(1){
         font-size: 36px;
@@ -238,7 +336,7 @@ section.first div :nth-child(2){
     section.first>div{
         padding: 20px 8px;
     }
-    section.second>:nth-last-child(2){
+    section.second>:nth-child(2){
         padding: 10px 8px;
         /* margin: px 6px; */
     }
@@ -266,7 +364,6 @@ section.first div :nth-child(2){
         gap:4px;
     }
     .main input{
-        /* margin-top:80px; */
         padding: 6px 100px 10px 8px;
         color: white;
         font-size: 14px;
@@ -276,5 +373,132 @@ section.first div :nth-child(2){
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        /* background-color: red; */
+    }
+    .hero2> :nth-child(1){
+        font-size: 30px;
+    }
+    .hero2> :nth-child(2){
+        font-size: 15px;
+    }
+    .hero2> :nth-child(3){
+        font-size: 13px;
+    }
+    .btn-red1{
+        padding: 5px 15px;
+        font-size: 16px;
+        border: none;
+    }
+    .hero-buttons{
+        flex-direction: column;
+        padding:0px 3px 0 6px;
+        gap:10px;
+    }
+    .main input{
+        margin-top:30px;
+        margin-bottom:8px;
+        padding: 6px 80px 8px 8px;
+        color: white;
+        font-size: 12px;
+    }
+    .main{
+        background-size: 210%;
+        background-repeat: repeat;
+    }
+    .second{
+        max-width:70vw;
+        margin: 30px auto;
+        height: 110vh;
+    }
+    .first{
+        flex-wrap: wrap;
+        color: rgb(255, 255, 255);
+    }
+    section.first div :nth-child(1){
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    section.first div :nth-child(2){
+        font-size: 20px;
+    }
+    section.first>div{
+        padding: 10px 10px;
+    }
+    section.second> :nth-child(1){
+        margin-bottom: 40px;
+    }
+    section.second :nth-child(2) span{
+        margin-top: 20px;
+        font-size: 18px;
+        color: white;
+    }
+    .third .secImg img{
+        width: 400px;
+        position: relative;
+        z-index: 10;
+    }
+    .secImg img{
+        width: 400px;
+        position: relative;
+        z-index: 10;
+    }
+    .secImg video {
+        width: 350px;
+        position: absolute;
+        top: 70px;
+        right: 22px;
+    }
+    .third .secImg video {
+        width: 250px;
+        position: absolute;
+        top: 40px;
+        right: 80px;
+    }
+    .fourth> :nth-child(2) span{
+        font-size: 12px;
+    }
+    .faq h2{
+        font-size: 26px;
+    }
+    .faqbox{
+        font-size: 18px;
+        padding: 10px;
+        max-width: 70vw;
+        margin: 24px auto;
+    }
+    .hero8 .footer_email{
+        flex-direction: column;
+    }
+    .hero8> :nth-child(1){
+        font-size: 16px;
+        color: rgb(240, 229, 229);
+    }
+    .hero8 .footer_email> :nth-child(1){
+        padding: 10px 100px 10px 10px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+    }
+    .hero8 .footer_email> :nth-child(2){
+        padding: 5px 20px;
+        font-size: 20px;
+    }
+    .footer {
+        gap: 25px;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav{
+        max-width: 90vw;
+        gap: 30px;
+    }
+    nav img{
+        width: 100px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 4px 14px;
     }
 }
